@@ -11,7 +11,7 @@ const Liked = () => {
         const storedFavorites = localStorage.getItem('favorites');
         const favoriteIds = storedFavorites ? JSON.parse(storedFavorites) : [];
 
-        const response = await fetch('https://splash-server-jiqb.onrender.com/api/products');
+        const response = await fetch('https://splash-server-1.onrender.com/api/products');
         const allProducts = await response.json();
 
         // Filter products based on the stored favorite IDs

@@ -30,7 +30,7 @@ const Discover = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://splash-server-jiqb.onrender.com/api/categories');
+        const response = await axios.get('https://splash-server-1.onrender.com/api/categories');
         if (response.data && Array.isArray(response.data)) {
           setCategories(response.data);
         }
@@ -68,7 +68,7 @@ const Discover = () => {
       try {
         setLoading(true);
         setError('');
-        const response = await axios.get('https://splash-server-jiqb.onrender.com/api/products');
+        const response = await axios.get('https://splash-server-1.onrender.com/api/products');
         if (response.data && Array.isArray(response.data)) {
           setProducts(response.data);
         } else {

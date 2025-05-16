@@ -45,7 +45,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://splash-server-jiqb.onrender.com/api/products');
+        const response = await fetch('https://splash-server-1.onrender.com/api/products');
         const data = await response.json();
         console.log('API Response:', data);
 

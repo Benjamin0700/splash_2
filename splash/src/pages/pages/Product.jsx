@@ -16,7 +16,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get('https://splash-server-jiqb.onrender.com/api/products');
+        const response = await axios.get('https://splash-server-1.onrender.com/api/products');
         const foundProduct = response.data.find(p => p._id === id);
         setProduct(foundProduct);
       } catch (err) {
